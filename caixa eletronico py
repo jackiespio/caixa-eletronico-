@@ -1,0 +1,34 @@
+print("caixa eletronico")
+
+valor =int(input("digite um valor para saque (minimp R$ 2,00 ):  "))
+
+if valor < 2:   
+ print("valor invalido")
+ 
+else: notas100 = valor // 100
+valor %=100 
+
+notas50 = valor //50
+valor %=50 
+
+notas20= valor // 20
+valor %=20
+
+notas5= valor // 5
+valor %=5
+
+notas2 = valor // 2
+valor %=2 
+
+print("\n saque realizado com sucesso")
+
+if notas100 > 0:
+    print(f"notas de 100 :{notas100}")
+    
+    print(f"notas de 50:{notas50}")
+    
+    print(f"notas de 20 :{notas20}")   
+     
+    print(f"notas de 5 :{notas5}")    
+    
+    print(f"notas de 2 :{notas2}")
